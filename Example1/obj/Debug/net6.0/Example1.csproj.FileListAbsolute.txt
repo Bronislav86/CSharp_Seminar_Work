@@ -1,0 +1,15 @@
+D:\БрониДоки\Обучение 1С Разработчик\Введение в программирование C#\Seminar\Work1\Example1\obj\Debug\net6.0\Example1.csproj.AssemblyReference.cache
+D:\БрониДоки\Обучение 1С Разработчик\Введение в программирование C#\Seminar\Work1\Example1\obj\Debug\net6.0\Example1.GeneratedMSBuildEditorConfig.editorconfig
+D:\БрониДоки\Обучение 1С Разработчик\Введение в программирование C#\Seminar\Work1\Example1\obj\Debug\net6.0\Example1.AssemblyInfoInputs.cache
+D:\БрониДоки\Обучение 1С Разработчик\Введение в программирование C#\Seminar\Work1\Example1\obj\Debug\net6.0\Example1.AssemblyInfo.cs
+D:\БрониДоки\Обучение 1С Разработчик\Введение в программирование C#\Seminar\Work1\Example1\obj\Debug\net6.0\Example1.csproj.CoreCompileInputs.cache
+D:\БрониДоки\Обучение 1С Разработчик\Введение в программирование C#\Seminar\Work1\Example1\bin\Debug\net6.0\Example1.exe
+D:\БрониДоки\Обучение 1С Разработчик\Введение в программирование C#\Seminar\Work1\Example1\bin\Debug\net6.0\Example1.deps.json
+D:\БрониДоки\Обучение 1С Разработчик\Введение в программирование C#\Seminar\Work1\Example1\bin\Debug\net6.0\Example1.runtimeconfig.json
+D:\БрониДоки\Обучение 1С Разработчик\Введение в программирование C#\Seminar\Work1\Example1\bin\Debug\net6.0\Example1.dll
+D:\БрониДоки\Обучение 1С Разработчик\Введение в программирование C#\Seminar\Work1\Example1\bin\Debug\net6.0\Example1.pdb
+D:\БрониДоки\Обучение 1С Разработчик\Введение в программирование C#\Seminar\Work1\Example1\obj\Debug\net6.0\Example1.dll
+D:\БрониДоки\Обучение 1С Разработчик\Введение в программирование C#\Seminar\Work1\Example1\obj\Debug\net6.0\refint\Example1.dll
+D:\БрониДоки\Обучение 1С Разработчик\Введение в программирование C#\Seminar\Work1\Example1\obj\Debug\net6.0\Example1.pdb
+D:\БрониДоки\Обучение 1С Разработчик\Введение в программирование C#\Seminar\Work1\Example1\obj\Debug\net6.0\Example1.genruntimeconfig.cache
+D:\БрониДоки\Обучение 1С Разработчик\Введение в программирование C#\Seminar\Work1\Example1\obj\Debug\net6.0\ref\Example1.dll
