@@ -1,23 +1,101 @@
-﻿// Напишите программу, которая принимает на вход
+﻿
+// int[ ] array = new int [8];
+// for (int i = 0; i < array.Length; i++)
+//     array[i] = new Random().Next(-10, 11); // [-10-10]
+// Console.WriteLine("[" + string.Join(", ", array) + "]");  // Запомнить конструкцию!!!!!!!!
+
+// string name = "Bronislav";
+// int age = 47;
+// string city = "Rostov";
+
+// Console.WriteLine($"Меня зовут {name} и мне {age} лет. Я из {city}");  // $ - интерполяция строк
+// Console.WriteLine("Меня зовут " + name + "и мне " + age + " лет. Я из " + city);
+
+//теперь пример с нашем массивом:
+
+// int[ ] array = new int [8];
+// for (int i = 0; i < array.Length; i++)
+//     array[i] = new Random().Next(-10, 11); // [-10-10]
+// Console.WriteLine($"[{string.Join(", ", array)}]");
+
+//-----------------------------------------------------------------------------------------
+
+// Напишите программу, которая выводит
+// случайное число из отрезка [10, 99] и показывает
+// наибольшую цифру числа.
+// 78 -> 8
+// 12-> 2
+// 85 -> 8
+
+// int a = new Random().Next(10, 100);
+// int a1 = a % 10;
+// int a2 = a / 10;
+// Console.WriteLine(a);
+// if (a1 > a2)
+//     Console.WriteLine(a1);
+// else
+//     Console.WriteLine(a2);
+
+//------------------------------------------------------------------------
+
+// Напишите программу, которая принимает на вход
+// трёхзначное число и удаляет вторую цифру этого числа.
+// 456 -> 46
+// 782 -> 72
+// 918 -> 98
+
+// Console.Clear();
+// Console.Write("Введите трехзначное число: ");
+// int a = Convert.ToInt32(Console.ReadLine()); // 523
+// int a1 = a / 100; // 5
+// int a3 = a % 10; // 3
+// Console.WriteLine(a1 * 10 + a3); // 5*10+3
+
+//-----------------------------------------------------------------------------
+
+// Напишите программу, которая принимает на
+// вход число и проверяет, кратно ли оно
+// одновременно 7 и 23.
+// 14 -> нет
+// 46 -> нет
+// 161 -> да
+
+// || - оператор или, срабатывает, когда выполняется хотя бы одно условие
+
+// Console.Clear();
+// Console.Write("Введите число: ");
+// int a = Convert.ToInt32(Console.ReadLine());
+
+// if (a % 7 == 0 && a % 23 == 0) // & - оператор И, выводит результат, когда оба условитя выполняются
+//     Console.WriteLine("yes");
+// else
+//     Console.WriteLine("no");
+
+//------------------------------------------------------------------------------
+
+
+
+
+// Напишите программу, которая принимает на вход
 // трёхзначное число и на выходе показывает вторую
 // цифру этого числа.
 // 456 -> 5
 // 782 -> 8
 // 918 -> 1
 
-Console.Clear();
-Console.Write("Введите трехзначное число: ");
-int a = Convert.ToInt32(Console.ReadLine());
+// Console.Clear();
+// Console.Write("Введите трехзначное число: ");
+// int a = Convert.ToInt32(Console.ReadLine());
 
-int a1 = a/10;
-int a2 = a%10;
+// int a1 = a/10;
+// int a2 = a%10;
 
-if (a1>a2)
-    Console.WriteLine(a1);
-else
-    Console.WriteLine(a2);
+// if (a1>a2)
+//     Console.WriteLine(a1);
+// else
+//     Console.WriteLine(a2);
 
-
+//------------------------------------------------------------------------------------
 
 
 // Напишите программу, которая будет принимать на вход два числа и
@@ -26,22 +104,18 @@ else
 
 // 34, 5 -> не кратно, остаток 4 
 // 16, 4 -> кратно
-/*
-Console.Clear();
-Console.Write("Введите первое число: ");
-int a = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите второе число: ");
-int b = Convert.ToInt32(Console.ReadLine());
 
-if (a % b == 0)
-{
-    Console.WriteLine("кратно");
-}
-else
-{
-    Console.WriteLine($"не кратно, {a % b}");
-}
-*/
+// Console.Clear();
+// Console.Write("Введите первое число: ");
+// int a = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите второе число: ");
+// int b = Convert.ToInt32(Console.ReadLine());
+
+// if (a % b == 0)
+//     Console.WriteLine("кратно");
+// else
+//     Console.WriteLine($"не кратно, {a % b}");
+
 
 //------------------------------------------------------------------------------------------
 
@@ -53,19 +127,14 @@ else
 // 25, 5  ->  да
 // 8,9  ->  нет
 
-/*
+
 Console.Clear();
 Console.Write("Введите первое число: ");
 int a = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите второе число: ");
 int b = Convert.ToInt32(Console.ReadLine());
 
-if (a * a == b || b * b == a)
-{
+if (a * a == b || b * b == a) //то есть если хотябы одно из числел является квадратом вторго числа, то условия выполняется
     Console.WriteLine("yes");
-}
 else
-{
-    Console.WriteLine($"no");
-}
-*/
+    Console.WriteLine("no");
