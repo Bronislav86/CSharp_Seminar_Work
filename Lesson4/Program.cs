@@ -89,3 +89,7 @@ Console.WriteLine(f(a));
 
 // Console.WriteLine($"[{string.Join(", ", array)}]");
 
+{
+Console.WriteLine("Привет!");
+Console.WriteLine("Добро подаловать в С#");
+}
