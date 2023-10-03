@@ -4,7 +4,11 @@
 // сумма отрицательных равна -20.
 
 
-
+// void InputArray(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//         array[i] = new Random().Next(-9, 10); // [-9; 9]
+// }
 
 // void ReleaseArray(int[] array)
 // {
@@ -88,7 +92,7 @@
 // int[] array = new int[n];
 // InputArray(array);
 // Console.WriteLine($"[{string.Join(", ", array)}]");
-// ReleaseArray(array);
+// ReleaseArray(array, x);
 // Console.WriteLine(ReleaseArray(array, x));
 
 //------------------------------------------------------------
@@ -108,7 +112,7 @@
 
 // int ReleaseArray(int[] array)
 // {
-//     count = 0;
+//     int count = 0;
 //     for (int i = 0; i < array.Length; i++)
 //         if (array[i] >= 10 && array[i] <=99)
 //             count ++;
@@ -134,44 +138,18 @@
 // [1 2 3 4 5] -> 5 8 3
 // [6 7 3 6] -> 36 21
 
-void InputArray(int[] array)
-{
-    for (int i = 0; i < array.Length; i++)
-        array[i] = new Random().Next(0, 100);
-}
-
-int ReleaseArray(int[] array)
-{
-    for (int i = 0; i < array.Length / 2 + array.Length % 2; i++)
-        Console.Write(array[i] * array[array.Length - 1 - i] + " ");
-}
-
-
-Console.Clear();
-Console.Write("Введите кол-во эл-тов массива: ");
-int n = Convert.ToInt32(Console.ReadLine());
-int[] array = new int[n];
-InputArray(array);
-Console.WriteLine($"[{string.Join(", ", array)}]");
-ReleaseArray(array);
-
-
-
 // void InputArray(int[] array)
 // {
 //     for (int i = 0; i < array.Length; i++)
-//         array[i] = new Random().Next(1, 10); // [-9; 9]
+//         array[i] = new Random().Next(1, 10);
 // }
 
 // void ReleaseArray(int[] array)
 // {
-//     for (int i = 0; i < array.Length / 2 +  array.Length % 2; i++)
+//     for (int i = 0; i < array.Length / 2 + array.Length % 2; i++)
 //         Console.Write(array[i] * array[array.Length - 1 - i] + " ");
+// }
 
-// }   
-
-//  // 0 1 2 3 4 5 6 7 index
-//  // 4 8 3 9 5 6 7 2
 // Console.Clear();
 // Console.Write("Введите кол-во эл-тов массива: ");
 // int n = Convert.ToInt32(Console.ReadLine());
