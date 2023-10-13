@@ -134,19 +134,20 @@
 // 4, 6, 1
 // 2, 1, 6
 
-// 1 2 3 4 6
+// 1 2 3 4 6 - массив с уникальными элементами
 
 // 1 встречается 3 раза
 // 2 встречается 2 раз
 // 3 встречается 1 раз
 // 4 встречается 1 раз
 // 6 встречается 2 раза
+
 bool CheckValue(int[] array, int x)
 {
     for (int i = 0; i < array.Length; i++)
     {
         if (array[i] == x)
-            return false;
+        return false;
     }
     return true;
 }
@@ -158,7 +159,7 @@ int InputMatrix(int[,] matrix, int[] array)
     {
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            matrix[i, j] = new Random().Next(0, 10); // [0; 10]
+            matrix[i, j] = new Random().Next(0, 50); // [0; 10]
 
             if (CheckValue(array, matrix[i, j]))
             {
@@ -209,9 +210,11 @@ int array_len = InputMatrix(matrix, array);
 InputMatrix(matrix, array);
 PrintMatrix(matrix);
 Console.WriteLine();
+Console.WriteLine(String.Join(" ", array));
+Console.WriteLine();
 ReleaseMatrix(matrix, array_len, array);
 Console.WriteLine();
-Console.WriteLine(String.Join(" ", array));
+
 
 // PrintMatrix(matrix);
 
