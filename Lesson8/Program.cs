@@ -142,78 +142,78 @@
 // 4 встречается 1 раз
 // 6 встречается 2 раза
 
-bool CheckValue(int[] array, int x)
-{
-    for (int i = 0; i < array.Length; i++)
-    {
-        if (array[i] == x)
-        return false;
-    }
-    return true;
-}
+// bool CheckValue(int[] array, int x)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         if (array[i] == x)
+//         return false;
+//     }
+//     return true;
+// }
 
-int InputMatrix(int[,] matrix, int[] array)
-{
-    int k = 0;
-    for (int i = 0; i < matrix.GetLength(0); i++)
-    {
-        for (int j = 0; j < matrix.GetLength(1); j++)
-        {
-            matrix[i, j] = new Random().Next(0, 50); // [0; 10]
+// int InputMatrix(int[,] matrix, int[] array)
+// {
+//     int k = 0;
+//     for (int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < matrix.GetLength(1); j++)
+//         {
+//             matrix[i, j] = new Random().Next(0, 50); // [0; 10]
 
-            if (CheckValue(array, matrix[i, j]))
-            {
-                array[k] = matrix[i, j];
-                k++;
-            }
-        }
-    }
-    return k;
-}
+//             if (CheckValue(array, matrix[i, j]))
+//             {
+//                 array[k] = matrix[i, j];
+//                 k++;
+//             }
+//         }
+//     }
+//     return k;
+// }
 
-void ReleaseMatrix(int[,] matrix, int array_len, int[] array)
-{
-    int count = 0;
-    for (int k = 0; k <= array_len; k++)
-    {
-        for (int i = 0; i < matrix.GetLength(0); i++)
-        {
-            for (int j = 0; j < matrix.GetLength(1); j++)
-            {
-                if (array[k] == matrix[i, j])
-                count++;
-            }
-        }
-        Console.WriteLine($"{array[k]} встретилось {count} раз");
-        count = 0;
-    }
-}
+// void ReleaseMatrix(int[,] matrix, int array_len, int[] array)
+// {
+//     int count = 0;
+//     for (int k = 0; k <= array_len; k++)
+//     {
+//         for (int i = 0; i < matrix.GetLength(0); i++)
+//         {
+//             for (int j = 0; j < matrix.GetLength(1); j++)
+//             {
+//                 if (array[k] == matrix[i, j])
+//                 count++;
+//             }
+//         }
+//         Console.WriteLine($"{array[k]} встретилось {count} раз");
+//         count = 0;
+//     }
+// }
 
-void PrintMatrix(int[,] matr)
-{
-    for (int i = 0; i < matr.GetLength(0); i++)
-    {
-        for (int j = 0; j < matr.GetLength(1); j++)
-        {
-            Console.Write($"{matr[i, j]} \t");
-        }
-        Console.WriteLine();
-    }
-}
+// void PrintMatrix(int[,] matr)
+// {
+//     for (int i = 0; i < matr.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < matr.GetLength(1); j++)
+//         {
+//             Console.Write($"{matr[i, j]} \t");
+//         }
+//         Console.WriteLine();
+//     }
+// }
 
-Console.Clear();
-Console.Write("Введитe размер матрицы: ");
-int[] size = Console.ReadLine().Split(" ").Select(x => int.Parse(x)).ToArray(); // 4 3
-int[,] matrix = new int[size[0], size[1]];
-int[] array = new int[size[0] * size[1]];
-int array_len = InputMatrix(matrix, array);
-InputMatrix(matrix, array);
-PrintMatrix(matrix);
-Console.WriteLine();
-Console.WriteLine(String.Join(" ", array));
-Console.WriteLine();
-ReleaseMatrix(matrix, array_len, array);
-Console.WriteLine();
+// Console.Clear();
+// Console.Write("Введитe размер матрицы: ");
+// int[] size = Console.ReadLine().Split(" ").Select(x => int.Parse(x)).ToArray(); // 4 3
+// int[,] matrix = new int[size[0], size[1]];
+// int[] array = new int[size[0] * size[1]];
+// int array_len = InputMatrix(matrix, array);
+// InputMatrix(matrix, array);
+// PrintMatrix(matrix);
+// Console.WriteLine();
+// Console.WriteLine(String.Join(" ", array));
+// Console.WriteLine();
+// ReleaseMatrix(matrix, array_len, array);
+// Console.WriteLine();
 
 
 // PrintMatrix(matrix);
